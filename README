@@ -1,0 +1,12 @@
+chmod +x 01_prep_host.sh 02_setup_preset.sh 03_build_container.sh 04_run_container.sh
+
+# Run preparation
+./01_prep_host.sh
+
+# Re-log or run this to activate Docker groups instantly without disconnecting:
+newgrp docker
+
+# Run remaining deployment steps
+./02_setup_preset.sh
+./03_build_container.sh
+./04_run_container.sh
